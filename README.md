@@ -10,6 +10,7 @@ find . -name \*.java -exec wc -c {} \; | sort -nr | tail -10
 #!/bin/bash
 
 total=0
+
 for i in $(find . -name \*.java);
 do 
 	total+=$(wc -l);
