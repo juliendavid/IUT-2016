@@ -13,6 +13,7 @@ total=0
 
 for i in $(find . -name \*.java);
 do 
-	total+=$(wc -l);	
+	count=$( cat $f | wc -l)
+	total=$( $total + $count);	
 done
 echo $total
