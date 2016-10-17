@@ -1,0 +1,23 @@
+git init
+echo "salut" >> Test.txt
+git add .               //enregistre dans index
+git commit -m "test 1"  //enregistre dans le repo
+git status              
+git log                  //Historique 10 derniers commit
+git diff                 //Vérifie différence entre work et index, si -cached, entre index et repo)
+git branch color
+git checkout color
+gedit Test.txt          //rajoute une ligne pour la couleur
+git add . 
+git commit -m "test color"
+git checkout master
+git branch size
+git checkout size
+gedit Test.txt
+git add .
+git commit -m "test size"
+git checkout master
+git merve color
+git merve size         //Si pas d'erreur le fichier Test.txt dans master rassemble leslignes ajouter dans les 2 branches
+git add .
+git commit -m "Test merge" 
